@@ -4,6 +4,10 @@ export default {
   content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        simbuka: "#6C2369",
+        simbuka2: "#461444",
+      },
       fontFamily: {
         sans: [
           "Inter",
