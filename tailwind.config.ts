@@ -5,8 +5,13 @@ export default {
   theme: {
     extend: {
       colors: {
+        greenbg: "#f0fdf4",
+        greenhl: "#16a34a",
         simbuka: "#5D1C59",
         simbuka2: "#461444",
+        graybg: "#f9fafb",
+        grayrow: "#fcfcfd",
+        graysort: "#a8aeb9",
       },
       fontFamily: {
         sans: [

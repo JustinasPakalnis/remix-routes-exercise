@@ -10,7 +10,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main className="flex items-center justify-center content-center h-screen">
+    <main className="flex h-screen content-center items-center justify-center">
       <Link to={"./loans/overview"}>LOANS</Link>
     </main>
   );

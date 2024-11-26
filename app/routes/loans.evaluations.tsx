@@ -11,123 +11,123 @@ import { IoEyeOutline } from "react-icons/io5";
 export default function Evalaution() {
   return (
     <>
-      <div className=" bg-white border-[1px] rounded-md shadow-md text-sm">
-        <h2 className="text-2xl border-b-[1px] p-3">Evaluation</h2>
-        <ul className="">
+      <div className="rounded-md border-[1px] bg-white text-sm font-[500] tracking-wide shadow-md">
+        <h2 className="border-b-[1px] p-3 text-lg font-[400]">Evaluation</h2>
+        <ul className="tracking-wide">
           <div className="flex border-b-[1px] p-3">
-            <li className="flex-[1]">Status</li>
-            <li className="flex flex-[2] items-center text-green-700 gap-2">
+            <li className="flex-[1.2]">Status</li>
+            <li className="flex flex-[3] items-center gap-2 text-green-700">
               <FaCheckCircle />
               Accepted
             </li>
           </div>
           <div className="flex border-b-[1px] p-3">
-            <li className="flex-[1]">Credit score</li>
-            <li className="flex flex-[2] items-center">897</li>
+            <li className="flex-[1.2]">Credit score</li>
+            <li className="flex flex-[3] items-center">897</li>
           </div>
           <div className="flex border-b-[1px] p-3">
-            <li className="flex-[1]">Risk level</li>
-            <li className="flex flex-[2] items-center text-blue-600 gap-2">
+            <li className="flex-[1.2]">Risk level</li>
+            <li className="flex flex-[3] items-center gap-2 text-blue-600">
               A1 (Very Low Risk)
               <OpenPage />
             </li>
           </div>
           <div className="flex border-b-[1px] p-3">
-            <li className="flex-[1]">Loan Limit</li>
-            <li className="flex flex-[2] items-center text-blue-600 gap-2">
+            <li className="flex-[1.2]">Loan limit</li>
+            <li className="flex flex-[3] items-center gap-2 text-blue-600">
               40,000,000.00 TZS
               <OpenPage />
             </li>
           </div>
         </ul>
       </div>
-      <section className=" bg-white border-[1px] rounded-md shadow-md text-sm">
-        <div className="p-3 border-b-[1px]">
-          <h2 className="text-xl">Policy Requirements</h2>
+      <section className="rounded-md border-[1px] bg-white text-sm shadow-md">
+        <div className="border-b-[1px] p-3">
+          <h2 className="text-lg font-[400]">Policy Requirements</h2>
         </div>
-        <div className="flex justify-between items-center">
-          <div className="p-3 relative text-xs">
-            <FaSearch className="absolute top-[18px] left-[18px] h-3 w-3 fill-gray-500" />
+        <div className="flex items-center justify-between">
+          <div className="relative p-3 text-xs">
+            <FaSearch className="absolute left-[18px] top-[18px] h-3 w-3 fill-gray-500" />
             <input
               type="text"
               placeholder="Search policy requirements..."
-              className="px-6 w-[250px] py-1 border-[1px] rounded-md text-gray-400"
+              className="w-[250px] rounded-md border-[1px] px-6 py-1 text-gray-400"
             />
           </div>
-          <button className="flex items-center justify-center gap-3 border-[1px] shadow-md text-gray-500 font-semibold h-[30px] w-[100px] mr-3 rounded-md">
+          <button className="mr-3 flex h-[30px] w-[100px] items-center justify-center gap-3 rounded-md border-[1px] font-semibold text-gray-500 shadow-md">
             <GoGear className="h-4 w-4" />
             Options
           </button>
         </div>
         <div className="flex">
-          <div className="flex-[8] border-y-[1px] p-3 border-b-[1px] bg-gray-100 flex justify-between items-center">
-            <h2 className="text-md text-gray-500 ">Policy Requirements</h2>
+          <div className="bg-graybg flex flex-[8] items-center justify-between border-y-[1px] border-b-[1px] p-3">
+            <h2 className="text-md text-gray-500">Policy Requirements</h2>
             <FaSort className="fill-gray-500" />
           </div>
-          <div className="flex-[1.5] border-[1px] p-3 border-b-[1px] bg-gray-100 flex justify-between items-center">
-            <h2 className="text-md font-bold text-gray-500 ">Decision</h2>
+          <div className="flex flex-[1.5] items-center justify-between border-[1px] border-b-[1px] bg-gray-100 p-3">
+            <h2 className="text-md font-bold text-gray-500">Decision</h2>
             <FaSort className="fill-gray-500" />
           </div>
         </div>
         <div className="flex">
-          <div className="flex-[8] border-r-[1px]  border-b-[1px] p-3  bg-white flex justify-between items-center">
+          <div className="flex flex-[8] items-center justify-between border-b-[1px] border-r-[1px] bg-white p-3">
             <p className="">Customer must be 18 or more years old</p>
           </div>
-          <div className="flex-[1.5]  p-3 border-b-[1px] bg-white flex justify-between items-center">
-            <p className="bg-green-200 font-bold text-green-600 border-[1px] border-gray-300 rounded-md px-2 py-0.5">
+          <div className="flex flex-[1.5] items-center justify-between border-b-[1px] bg-white p-3">
+            <p className="rounded-md border-[1px] border-gray-300 bg-green-200 px-2 py-0.5 font-bold text-green-600">
               Passed
             </p>
             <IoEyeOutline />
           </div>
         </div>
         <div className="flex">
-          <div className="flex-[8] border-r-[1px]  p-3 border-b-[1px] bg-white flex justify-between items-center">
+          <div className="flex flex-[8] items-center justify-between border-b-[1px] border-r-[1px] bg-white p-3">
             <p className="">
               Customer must be 54 or less years old at loan maturity date
             </p>
           </div>
-          <div className="flex-[1.5] p-3 border-b-[1px] bg-white flex justify-between items-center">
-            <p className="bg-green-200 font-bold text-green-600 border-[1px] border-gray-300 rounded-md px-2 py-0.5">
+          <div className="flex flex-[1.5] items-center justify-between border-b-[1px] bg-white p-3">
+            <p className="rounded-md border-[1px] border-gray-300 bg-green-200 px-2 py-0.5 font-bold text-green-600">
               Passed
             </p>
             <IoEyeOutline />
           </div>
         </div>
         <div className="flex">
-          <div className="flex-[8] border-r-[1px]  p-3 border-b-[1px] bg-white flex justify-between items-center">
+          <div className="flex flex-[8] items-center justify-between border-b-[1px] border-r-[1px] bg-white p-3">
             <p className="">
               Customer must be emplyed for a minimum of three months with their
               current employer
             </p>
           </div>
-          <div className="flex-[1.5] p-3 border-b-[1px] bg-white flex justify-between items-center">
-            <p className="bg-green-200 font-bold text-green-600 border-[1px] border-gray-300 rounded-md px-2 py-0.5">
+          <div className="flex flex-[1.5] items-center justify-between border-b-[1px] bg-white p-3">
+            <p className="rounded-md border-[1px] border-gray-300 bg-green-200 px-2 py-0.5 font-bold text-green-600">
               Passed
             </p>
             <IoEyeOutline />
           </div>
         </div>
         <div className="flex">
-          <div className="flex-[8] border-r-[1px]  p-3 border-b-[1px] bg-white flex justify-between items-center">
+          <div className="flex flex-[8] items-center justify-between border-b-[1px] border-r-[1px] bg-white p-3">
             <p className="">Customer must have a clean Creditinfo report</p>
           </div>
-          <div className="flex-[1.5] p-3 border-b-[1px] bg-white flex justify-between items-center">
-            <p className="bg-green-200 font-bold text-green-600 border-[1px] border-gray-300 rounded-md px-2 py-0.5">
+          <div className="flex flex-[1.5] items-center justify-between border-b-[1px] bg-white p-3">
+            <p className="rounded-md border-[1px] border-gray-300 bg-green-200 px-2 py-0.5 font-bold text-green-600">
               Passed
             </p>
             <IoEyeOutline />
           </div>
         </div>
-        <div className="flex p-3 bg-gray-100 justify-between items-center rounded-b-md">
+        <div className="bg-graybg flex items-center justify-between rounded-b-md border-t-[1px] p-3 font-[350]">
           <p className="text-[12px]">
             Showing 1 - 4 (4 results were found in total)
           </p>
           <div className="flex gap-3">
-            <button className="border-[1px] justify-center flex items-center gap-2 px-3 py-1 rounded-md bg-gray-50 text-gray-400 font-bold">
+            <button className="flex items-center justify-center gap-2 rounded-md border-[1px] bg-gray-50 px-3 py-1 font-bold text-gray-400">
               <FaAngleLeft className="h-4 w-4" />
               Previous
             </button>
-            <button className="border-[1px] justify-center flex items-center gap-2 px-3 py-1 rounded-md bg-gray-50 text-gray-400 font-bold">
+            <button className="flex items-center justify-center gap-2 rounded-md border-[1px] bg-gray-50 px-3 py-1 font-bold text-gray-400">
               Next
               <FaAngleRight className="h-4 w-4" />
             </button>

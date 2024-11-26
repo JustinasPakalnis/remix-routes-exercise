@@ -3,24 +3,24 @@ import OpenPage from "public/OpenPage";
 export default function Overview() {
   return (
     <>
-      <div className="flex border rounded-md bg-white shadow-md">
+      <div className="flex rounded-md border bg-white shadow-sm">
         <div className="flex-1 border-r p-3">
-          <span className="text-gray-500 ">Maturity progress</span>
+          <span className="text-gray-500">Maturity progress</span>
           <h2 className="text-xl">8.33</h2>
         </div>
         <div className="flex-1 border-r p-3">
-          <span className="text-gray-500 ">Outstanding amount</span>
+          <span className="text-gray-500">Outstanding amount</span>
           <h2 className="text-xl">1,165,801.60 TZS</h2>
         </div>
         <div className="flex-1 p-3">
-          <span className="text-gray-500 ">Maturity date</span>
+          <span className="text-gray-500">Maturity date</span>
           <h2 className="text-xl">2025-11-21</h2>
         </div>
       </div>
-      <div className="border rounded-md bg-white text-sm shadow-md">
+      <div className="rounded-md border bg-white text-sm shadow-sm">
         <div className="flex border-b-[1px] px-3 py-3">
           <p className="flex-[2]">Product</p>
-          <p className="flex-[5] text-blue-500 cursor-pointer flex items-start gap-1">
+          <p className="flex flex-[5] cursor-pointer gap-1 text-blue-500">
             BancEasy - Mkopo Rahisi <OpenPage />
           </p>
         </div>
@@ -30,7 +30,7 @@ export default function Overview() {
         </div>
         <div className="flex border-b-[1px] px-3 py-3">
           <p className="flex-[2]">Applicant</p>
-          <p className="flex-[5] text-blue-500 cursor-pointer flex items-start gap-1">
+          <p className="flex flex-[5] cursor-pointer gap-1 text-blue-500">
             kauthar RATARI rashid <OpenPage />
           </p>
         </div>
@@ -62,14 +62,14 @@ export default function Overview() {
         </div>
         <div className="flex border-b-[1px] px-3 py-3">
           <p className="flex-[2]">Fees deducted from disbursement amount</p>
-          <p className="flex-[5] flex gap-3">
+          <p className="flex flex-[5] gap-3">
             30,000.00 TZS
-            <span className="text-blue-500 cursor-pointer flex items-start gap-1">
+            <span className="flex cursor-pointer gap-1 text-blue-500">
               View amount breakdown <OpenPage />
             </span>
           </p>
         </div>
-        <div className="flex border-b-[1px] p-3 bg-gray-100 items-end h-14">
+        <div className="bg-grayrow flex h-14 items-end border-b-[1px] p-3">
           <p>Extra Information</p>
         </div>
         <div className="flex px-3 py-3">
