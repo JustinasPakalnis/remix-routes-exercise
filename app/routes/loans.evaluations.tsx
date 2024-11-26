@@ -61,9 +61,7 @@ export default function Evalaution() {
         </div>
         <div className="flex">
           <div className="flex-[8] border-y-[1px] p-3 border-b-[1px] bg-gray-100 flex justify-between items-center">
-            <h2 className="text-md font-bold text-gray-500 ">
-              Policy Requirements
-            </h2>
+            <h2 className="text-md text-gray-500 ">Policy Requirements</h2>
             <FaSort className="fill-gray-500" />
           </div>
           <div className="flex-[1.5] border-[1px] p-3 border-b-[1px] bg-gray-100 flex justify-between items-center">

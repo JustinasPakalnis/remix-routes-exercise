@@ -16,7 +16,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main>
+    <main className="flex flex-col h-screen">
       <header className="bg-simbuka flex py-1 items-center px-6 justify-between">
         <div className="text-white flex items-center gap-[27px] text-md">
           <Logo />
@@ -61,13 +61,13 @@ export default function Index() {
           <Options className="h-3" />
         </div>
       </div>
-      <section className="flex">
-        <nav className="flex flex-col p-3 border-r-[1px] w-[200px] gap-5 h-screen text-xs tracking-wide">
+      <section className="flex h-full">
+        <nav className="flex flex-col p-3 border-r-[1px] w-[280px] gap-5 h-full text-sm tracking-wide">
           <div className="flex flex-col ">
             <NavLink
               className={({ isActive, isPending }) =>
                 isActive
-                  ? "bg-gray-200 rounded-md px-2 py-1 font-bold hover:bg-gray-200 hover:font-bold"
+                  ? "bg-gray-100 rounded-md px-2 py-1 font-bold hover:bg-gray-100 hover:font-bold"
                   : isPending
                   ? ""
                   : "px-2 py-1 rounded-md hover:bg-gray-200 hover:font-bold"
@@ -91,7 +91,7 @@ export default function Index() {
             <NavLink
               className={({ isActive, isPending }) =>
                 isActive
-                  ? "bg-gray-200 rounded-md px-2 py-1 font-bold hover:bg-gray-200 hover:font-bold"
+                  ? "bg-gray-100 rounded-md px-2 py-1 font-bold hover:bg-gray-100 hover:font-bold"
                   : isPending
                   ? ""
                   : "px-2 py-1 rounded-md hover:bg-gray-200 hover:font-bold"
@@ -102,7 +102,7 @@ export default function Index() {
             </NavLink>
           </div>
           <div className="flex flex-col">
-            <p className="text-gray-400 px-2 py-1 text-[11px] font-semibold">
+            <p className="text-gray-400 px-2 py-1 text-[12px] font-semibold">
               LOAN PROCESS
             </p>
             <Link
@@ -120,7 +120,7 @@ export default function Index() {
             <NavLink
               className={({ isActive, isPending }) =>
                 isActive
-                  ? "bg-gray-200 rounded-md px-2 py-1 font-bold hover:bg-gray-200 hover:font-bold"
+                  ? "bg-gray-100 rounded-md px-2 py-1 font-bold hover:bg-gray-100 hover:font-bold"
                   : isPending
                   ? ""
                   : "px-2 py-1 rounded-md hover:bg-gray-200 hover:font-bold"
@@ -144,7 +144,7 @@ export default function Index() {
             <NavLink
               className={({ isActive, isPending }) =>
                 isActive
-                  ? "bg-gray-200 rounded-md px-2 py-1 font-bold hover:bg-gray-200 hover:font-bold"
+                  ? "bg-gray-100 rounded-md px-2 py-1 font-bold hover:bg-gray-100 hover:font-bold"
                   : isPending
                   ? ""
                   : "px-2 py-1 rounded-md hover:bg-gray-200 hover:font-bold"

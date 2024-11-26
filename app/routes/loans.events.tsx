@@ -10,15 +10,15 @@ import { IoEyeOutline } from "react-icons/io5";
 import { Outlet } from "@remix-run/react";
 export default function Events() {
   return (
-    <div className="flex flex-col text-xs border rounded-md bg-white shadow-md">
+    <div className="flex flex-col text-sm border rounded-md bg-white shadow-md">
       <h2 className="text-xl border-b-[1px] p-3">Events</h2>
       <div className="flex justify-between items-center">
         <div className="p-3 relative">
-          <FaSearch className="absolute top-[18px] left-[18px] h-3 w-3 fill-gray-500" />
+          <FaSearch className="absolute top-[20px] left-[18px] h-2.5 w-2.5 fill-gray-500" />
           <input
             type="text"
             defaultValue="Search events..."
-            className="px-6 py-1 border-[1px] rounded-md text-gray-400"
+            className="px-6 py-1 border-[1px] text-xs rounded-md text-gray-400"
           />
         </div>
         <button className="flex items-center justify-center gap-3 border-[1px] shadow-md text-gray-500 font-semibold h-[30px] w-[100px] mr-3 rounded-md">

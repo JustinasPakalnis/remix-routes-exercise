@@ -25,7 +25,7 @@ export default function Finalization() {
             <input type="text" className="border-[1px] rounded-md px-2 py-8" />
           </div>
           <div className="flex items-start w-[650px]">
-            <input type="checkbox" className="m-1" />
+            <input type="checkbox" className="m-[5px]" />
             <div>
               <h2 className="font-semibold text-gray-700">
                 Finalize loan contract
@@ -40,7 +40,7 @@ export default function Finalization() {
         </div>
       </div>
       <div className="flex bg-gray-100 flex-[1] border-t-[1px] p-3">
-        <button className="bg-simbuka hover:bg-simbuka2 transition duration-300 rounded-md text-white py-2 flex w-full justify-center text-sm">
+        <button className="bg-simbuka hover:bg-simbuka2 transition duration-300 rounded-md text-white py-3 flex w-full justify-center text-sm">
           Finalize contract
         </button>
       </div>

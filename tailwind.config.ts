@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        simbuka: "#6C2369",
+        simbuka: "#5D1C59",
         simbuka2: "#461444",
       },
       fontFamily: {
