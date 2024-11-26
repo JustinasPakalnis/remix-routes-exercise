@@ -1,7 +1,7 @@
-export default function Down() {
+export default function Down({ className }) {
   return (
     <svg
-      className="h-4 w-4 -rotate-90 transition-transform"
+      className={className}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

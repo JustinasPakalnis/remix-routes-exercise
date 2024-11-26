@@ -1,11 +1,11 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link, Outlet, NavLink } from "@remix-run/react";
-import Logo from "public/SimbukaLogo";
-import Down from "public/Down";
-import Back from "public/Back";
-import Menu from "public/Menu";
-import Account from "public/Account";
-import Options from "public/Options";
+import Logo from "~/components/SimbukaLogo";
+import Down from "~/components/Down";
+import Back from "~/components/Back";
+import Menu from "~/components/Menu";
+import Account from "~/components/Account";
+import Options from "~/components/Options";
 
 export const meta: MetaFunction = () => {
   return [{ title: "Overview" }, { name: "description", content: "Overview" }];
@@ -23,23 +23,23 @@ export default function Index() {
           <a className="flex items-center gap-2" href="./">
             Legal entities
             <div className="">
-              <Down />
+              <Down className={"h-4 w-4 -rotate-90 transition-transform"} />
             </div>
           </a>
           <a href="./">Bank accounts</a>
           <a className="flex items-center gap-2" href="./">
             Payments
-            <Down />
+            <Down className={"h-4 w-4 -rotate-90 transition-transform"} />
           </a>
           <a className="flex items-center gap-2" href="./">
             Loans
-            <Down />
+            <Down className={"h-4 w-4 -rotate-90 transition-transform"} />
           </a>
           <a href="./">Products</a>
           <a href="./">Reports</a>
           <a className="flex items-center gap-2" href="./">
             Organization
-            <Down />
+            <Down className={"h-4 w-4 -rotate-90 transition-transform"} />
           </a>
         </div>
         <div className="flex items-center gap-[22px]">
@@ -63,8 +63,8 @@ export default function Index() {
         </div>
       </div>
       <section className="flex h-full">
-        <nav className="flex h-full w-[276px] flex-col gap-[14px] border-r-[1px] p-3 text-sm font-[350] tracking-[0.01em]">
-          <div className="flex flex-col gap-[2px]">
+        <nav className="flex h-full w-[276px] flex-col gap-[13px] border-r-[1px] p-3 text-sm font-[350] tracking-[0.01em]">
+          <div className="flex flex-col gap-[3px]">
             <NavLink
               className={({ isActive, isPending }) =>
                 isActive

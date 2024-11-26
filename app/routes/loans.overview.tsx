@@ -1,4 +1,4 @@
-import OpenPage from "public/OpenPage";
+import OpenPage from "~/components/OpenPage";
 
 export default function Overview() {
   return (
