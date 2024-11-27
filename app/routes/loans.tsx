@@ -13,8 +13,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main className="flex h-screen flex-col font-sans">
-      <header className="flex items-center justify-between bg-simbuka px-6 py-3">
+    <main className="relative flex h-screen flex-col font-sans">
+      <header className="flex items-center justify-between whitespace-nowrap bg-simbuka px-6 py-3">
         <div className="text-md flex items-center gap-[25px] text-white">
           <div className="mr-2">
             <Logo />
@@ -58,12 +58,12 @@ export default function Index() {
             Contract active
           </p>
         </div>
-        <div className="cursor-pointer rounded-md border-[1px] border-gray-300 p-1 shadow-inner">
+        <div className="mr-1 cursor-pointer rounded-md border-[1px] border-gray-300 p-1 shadow-inner">
           <Options className="h-4 fill-gray-500" />
         </div>
       </div>
       <section className="flex h-full">
-        <nav className="flex h-full w-[276px] flex-col gap-[13px] border-r-[1px] p-3 text-sm font-[350] tracking-[0.01em]">
+        <nav className="fixed flex h-full w-[250px] flex-col gap-[13px] border-r-[1px] p-3 text-sm font-[350] tracking-[0.01em]">
           <div className="flex flex-col gap-[3px]">
             <NavLink
               className={({ isActive, isPending }) =>
@@ -138,7 +138,7 @@ export default function Index() {
             </NavLink>
           </div>
         </nav>
-        <section className="bg-graybg flex w-screen flex-col gap-3 p-[14px]">
+        <section className="bg-graybg flex w-full flex-col gap-3 p-[14px]">
           <Outlet />
         </section>
       </section>
